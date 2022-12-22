@@ -1,4 +1,13 @@
+### DEPENDENCY HELL  
+
+Packages in this group are "the finger in the damn" to dealing with npm errors for outdated / mismatched versions / abandoned dependencies.  If it's in here, it's because npm keeps throwing errors from some package that depends on some other package [repeat]
+
+---
+
+
 # HAR Validator
+originally by Ahmad Nassri https://github.com/ahmadnassri  
+https://github.com/ahmadnassri/node-har-validator  
 
 [![license][license-img]][license-url]
 [![version][npm-img]][npm-url]
