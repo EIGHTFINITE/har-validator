@@ -1,4 +1,4 @@
-### DEPENDENCY HELL  
+### NPM-DEPENDENCY-HELL  
 
 Packages in this group are "the finger in the damn" to dealing with npm errors for outdated / mismatched versions / abandoned dependencies.  If it's in here, it's because npm keeps throwing errors from some package that depends on some other package [repeat]
 
