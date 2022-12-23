@@ -2,6 +2,12 @@
 
 Packages in this group are "the finger in the dam" to dealing with npm errors for outdated / mismatched versions / abandoned dependencies.  If it's in here, it's because npm keeps throwing errors from some package that depends on some other package [repeat]
 
+Changes to this package:
+- Update ajv dependency
+- Update tap dependency
+
+```npm audit fix``` should resolve any other issues.  
+
 ---
 
 
