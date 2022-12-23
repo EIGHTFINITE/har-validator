@@ -29,7 +29,6 @@
     "url": "https://github.com/npm-dependency-hell/node-har-validator/issues"
   },
   "scripts": {
-    "lint": "npx run-p lint:*",
     "test": "tap test --no-coverage",
     "test:coverage": "tap test --coverage-report=lcov --no-browser"
   },
