@@ -2,7 +2,7 @@
 
 const fixture = require('./fixtures/har/valid')
 const HARError = require('../lib/error')
-const schemas = require('har-schema')
+const schemas = require('./har-schema')
 const tap = require('tap')
 const validate = require('../lib/promise')
 
