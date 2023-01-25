@@ -20,7 +20,7 @@ tap.test('async', assert => {
 tap.test('failure', assert => {
   assert.plan(4)
 
-  const error = new HARError([{ dataPath: '.log.version', message: 'should be string' }])
+  const error = new HARError([{ message: 'must be string' }])
 
   assert.notOk(validate.har({}), 'should fail')
 

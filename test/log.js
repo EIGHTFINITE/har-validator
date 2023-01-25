@@ -7,12 +7,12 @@ const valid = require('./fixtures/har/valid')
 const validate = require('../lib/promise')
 
 const errors = {
-  object: new HARError([{ dataPath: '', message: "should have required property 'log'" }]),
-  array: new HARError([{ dataPath: '', message: 'should be object' }]),
-  undef: new HARError([{ dataPath: '', message: "should have required property 'log'" }]),
-  version: new HARError([{ dataPath: '.log.version', message: 'should be string' }]),
-  creator: new HARError([{ dataPath: '.log.creator.version', message: 'should be string' }]),
-  date: new HARError([{ dataPath: '.log.pages[0].startedDateTime', message: 'should match pattern' }])
+  object: new HARError([{ message: "must have required property 'log'" }]),
+  array: new HARError([{ message: 'must be object' }]),
+  undef: new HARError([{ message: "must have required property 'log'" }]),
+  version: new HARError([{ message: 'must be string' }]),
+  creator: new HARError([{ message: 'must be string' }]),
+  date: new HARError([{ message: 'must match pattern' }])
 }
 
 tap.test('log', assert => {

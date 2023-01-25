@@ -7,12 +7,12 @@ const validate = require('../lib/promise')
 const tap = require('tap')
 
 const errors = {
-  object: new HARError([{ dataPath: '', message: "should have required property 'status'" }]),
-  array: new HARError([{ dataPath: '', message: 'should be object' }]),
-  undef: new HARError([{ dataPath: '', message: "should have required property 'status'" }]),
-  bodySize: new HARError([{ dataPath: '.bodySize', message: 'should be integer' }]),
-  headers: new HARError([{ dataPath: '.headers', message: 'should be array' }]),
-  malformed: new HARError([{ dataPath: '.headers[0]', message: "should have required property 'name'" }])
+  object: new HARError([{ message: "must have required property 'status'" }]),
+  array: new HARError([{ message: 'must be object' }]),
+  undef: new HARError([{ message: "must have required property 'status'" }]),
+  bodySize: new HARError([{ message: 'must be integer' }]),
+  headers: new HARError([{ message: 'must be array' }]),
+  malformed: new HARError([{ message: "must have required property 'name'" }])
 }
 
 tap.test('response', assert => {

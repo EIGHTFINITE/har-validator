@@ -7,12 +7,12 @@ const valid = require('./fixtures/request/valid')
 const validate = require('../lib/promise')
 
 const errors = {
-  object: new HARError([{ dataPath: '', message: "should have required property 'method'" }]),
-  array: new HARError([{ dataPath: '', message: 'should be object' }]),
-  undef: new HARError([{ dataPath: '', message: "should have required property 'method'" }]),
-  url: new HARError([{ dataPath: '.url', message: 'should match format "uri"' }]),
-  headers: new HARError([{ dataPath: '.headers', message: 'should be array' }]),
-  malformed: new HARError([{ dataPath: '.headers[0]', message: "should have required property 'name'" }])
+  object: new HARError([{ message: "must have required property 'method'" }]),
+  array: new HARError([{ message: 'must be object' }]),
+  undef: new HARError([{ message: "must have required property 'method'" }]),
+  url: new HARError([{ message: 'must match format "uri"' }]),
+  headers: new HARError([{ message: 'must be array' }]),
+  malformed: new HARError([{ message: "must have required property 'name'" }])
 }
 
 tap.test('request', assert => {
